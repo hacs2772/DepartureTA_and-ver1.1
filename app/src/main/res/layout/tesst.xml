@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Today" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/bu"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="200dp"
+                android:background="#00ff0000"
+                android:gravity="right"
+                android:text="🔻"
+                android:textColor="@color/black"
+                android:textColorLink="@color/black" />
+
+            <TableLayout
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible">
+                <TextView
+                    android:id="@+id/detail0"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/detail1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/arrow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/detail2"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/arrow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/detail3"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/arrow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/detail4"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/arrow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/detail5"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/arrow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/detail6"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="20dp" />
+            </TableLayout>
+        </TableLayout>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
