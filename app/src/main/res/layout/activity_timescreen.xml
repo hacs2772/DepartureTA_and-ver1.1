@@ -11,28 +11,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TableLayout>
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            <TextView
-                android:text="Today"
-                />
-            <TextView
-                android:textSize="20dp"
-                android:text="(이동경로 간략하게 보임)"
-                android:layout_gravity="center"
-                android:gravity="center"
-                />
-            <TextView
-                android:text="Tommorrow"
-                />
-            <TextView
-                android:textSize="20dp"
-                android:text="(이동경로 간략하게 보임)"
-                android:layout_gravity="center"
-                android:gravity="center"
-                />
-        </TableLayout>
 
         <TableRow
             android:layout_width="match_parent"
@@ -47,6 +25,7 @@
                 android:drawableStart="@drawable/ic_baseline_assignment_24"
                 android:drawableLeft="@drawable/ic_baseline_assignment_24"
                 android:layout_gravity="center"
+                android:id="@+id/clearalll"
                 />
 
             <TextView
@@ -122,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -143,10 +122,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00FFFFFF"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday0"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -155,10 +135,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday0"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -167,10 +148,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday0"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -179,10 +161,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday0"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -191,10 +174,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday0"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -203,10 +187,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday0"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>
@@ -214,8 +199,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="#C8FFA9C6">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -236,10 +228,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday1"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -248,10 +241,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday1"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -260,10 +254,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday1"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -272,10 +267,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday1"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -284,10 +280,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday1"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -296,10 +293,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday1"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>
@@ -307,8 +305,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="#C8FFA9C6">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -329,10 +334,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday2"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -341,10 +347,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday2"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -353,10 +360,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday2"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -365,10 +373,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday2"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -377,10 +386,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday2"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -389,10 +399,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday2"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>
@@ -400,8 +411,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="#C8FFA9C6">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -422,10 +440,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday3"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -434,10 +453,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday3"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -446,10 +466,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday3"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -458,10 +479,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday3"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -470,10 +492,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday3"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -482,10 +505,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday3"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>
@@ -493,8 +517,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="#C8FFA9C6">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -515,10 +546,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday4"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -527,10 +559,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday4"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -539,10 +572,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday4"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -551,10 +585,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday4"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -563,10 +598,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday4"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -575,10 +611,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday4"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>
@@ -586,8 +623,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="#C8FFA9C6">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -608,10 +652,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday5"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -620,10 +665,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday5"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -632,10 +678,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday5"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -644,10 +691,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday5"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -656,10 +704,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday5"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -668,10 +717,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday5"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>
@@ -679,8 +729,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="#C8FFA9C6">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -701,10 +758,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday6"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -713,10 +771,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday6"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -725,10 +784,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday6"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -737,10 +797,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday6"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -749,10 +810,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday6"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -761,10 +823,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday6"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>
@@ -772,8 +835,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="#C8FFA9C6">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -794,10 +864,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday7"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -806,10 +877,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday7"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -818,10 +890,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday7"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -830,10 +903,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday7"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -842,10 +916,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday7"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -854,10 +929,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday7"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>
@@ -865,8 +941,15 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:background="#C8FFA9C6">
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="0dp"
             android:background="#C8FFA9C6">
 
             <TextView
@@ -887,10 +970,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/monday8"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="화"
@@ -899,10 +983,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/tuesday8"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="수"
@@ -911,10 +996,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/wednessday8"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="목"
@@ -923,10 +1009,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/thursday8"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="금"
@@ -935,10 +1022,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/friday8"
+                android:backgroundTint="@color/button_background_color"
                 />
             <TextView
                 android:text="토"
@@ -947,10 +1035,11 @@
                 android:layout_weight="3"
                 android:layout_gravity="center"
                 android:textColor="#00ffffff"
-                android:textSize="28dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:background="@drawable/cell_shape"
                 android:id="@+id/saturday8"
+                android:backgroundTint="@color/button_background_color"
                 />
 
         </TableRow>

@@ -5,12 +5,16 @@
       <map>
         <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/drawable/cell_shape.xml" value="0.3305" />
         <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/drawable/ic_baseline_assignment_24.xml" value="0.342" />
+        <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/drawable/ic_baseline_map_24.xml" value="0.3155" />
         <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/drawable/ic_baseline_my_location_23.xml" value="0.3045" />
         <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/drawable/ic_baseline_my_location_24.xml" value="0.3045" />
         <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.3045" />
         <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/layout/activity_main.xml" value="0.31875" />
+        <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/layout/activity_routescreen.xml" value="0.3359375" />
         <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/layout/activity_splash.xml" value="0.16448032290615539" />
-        <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/layout/activity_timescreen.xml" value="0.31875" />
+        <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/layout/activity_timescreen.xml" value="0.25" />
+        <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/layout/tesst.xml" value="0.251953125" />
+        <entry key="..\:/Users/samsung/AndroidStudioProjects/screen20/app/src/main/res/xml/network_security_config.xml" value="0.16044399596367306" />
       </map>
     </option>
   </component>

@@ -8,6 +8,10 @@ import androidx.room.Room;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.app.job.JobService;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -33,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     private final int PERMISSION_REQUEST_RESULT = 100;
 
     private Button timescreen_move;
+    private Button routescreen_move;
     Button thread_start, thread_stop;
     Thread thread;
     boolean isTread = false;
@@ -40,12 +45,18 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     TextView tv_location;
     Button bt_my_location;
 
+    //new
+    private static final int JOB_KEY = 101;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //new
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // JobScheduler 등록
+        initJobScheduler();
 
 
 
@@ -63,6 +74,17 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 startActivity(intent); // timescreen 이동
             }
         });
+
+        routescreen_move = findViewById(R.id.routescreen_move);
+        routescreen_move.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, routescreen.class);
+                startActivity(intent); // routescreen 이동
+            }
+        });
+
+
 
         //스레드 시작
         thread_start = (Button)findViewById(R.id.thread_start);
@@ -162,18 +184,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         return true;
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if (PERMISSION_REQUEST_RESULT == requestCode) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Log.i("permission","agree");
-            }else {
-                Log.i("permission","disagree");
-            }
-            return;
-        }
-    }
-
     private Handler handler = new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -208,5 +218,28 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     @Override
     public void onProviderDisabled(@NonNull String provider) {
         LocationListener.super.onProviderDisabled(provider);
+    }
+
+    //new
+
+    private void initJobScheduler() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ComponentName componentName = new ComponentName(this, JobService.class);
+//            PersistableBundle bundle = new PersistableBundle();
+//            bundle.putInt("number", 10);
+            JobInfo.Builder builder = new JobInfo.Builder(JOB_KEY, componentName)
+                    .setPersisted(true);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                // 버전마다 기간등록하는방법이 다르다해서 이렇게 작성했습니다.
+                // 정확한건 더 찾아봐야 합니다.
+                // 첫번째칸  간격 설정(최소시간 15분)
+                // 두번째칸 이 작업에 대한 밀리초 플렉스. Flex는 기간의 최소 또는 5% 중 더 높은 값으로 고정됩니다
+                builder.setPeriodic(15 * 60 * 1000, 20 * 60 * 1000);
+            } else {
+                builder.setPeriodic(15 * 60 * 1000);
+            }
+            JobScheduler scheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
+            scheduler.schedule(builder.build());
+        }
     }
 }

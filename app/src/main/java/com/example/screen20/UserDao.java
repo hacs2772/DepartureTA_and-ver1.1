@@ -15,20 +15,22 @@ import kotlin.ParameterName;
 @Dao
 public interface UserDao {
 
-    @Insert//(onConflict = OnConflictStrategy.REPLACE)
-    void setInsertUser(User user);
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void setInsertUser(User2 user2);
 
     @Update
-    void setUpdateUser(User user);
+    void setUpdateUser(User2 user2);
 
     @Delete
-    void setDeleteUser(User user);
+    void setDeleteUser(User2 user2);
 
-    @Query("Select * From User")
-    List<User> getUserAll();
+    @Query("Select * From User2 where monday_start")
+    List<User2> getUserAll();
 
-    @Query("Select * from User where id = 1")
-    User getUser();
+    @Query("Select * From User2 where monday_start")
+    int getmonday();
+
+
 
 
 

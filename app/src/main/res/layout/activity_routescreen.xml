@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".routescreen">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            <TextView
+                android:id="@+id/today_move1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="today"/>
+
+
+
+
+        </LinearLayout>
+        <TableLayout>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            <TextView
+                android:text="Tommorrow"
+                />
+            <TextView
+                android:textSize="20dp"
+                android:text="(이동경로 간략하게 보임)"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+        </TableLayout>
+    </TableLayout>
+
+</RelativeLayout>

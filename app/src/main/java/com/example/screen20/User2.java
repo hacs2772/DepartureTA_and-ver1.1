@@ -8,17 +8,18 @@ import org.jetbrains.annotations.Nullable;
 import java.lang.annotation.Native;
 
 @Entity
-public class User {
+class User2 {
     @PrimaryKey(autoGenerate = true)
-    private int id = 0;                     //하나의 사용자에 대한 고유 ID값
-    private int monday_start =500;
-    private int tuesday_start=500;
-    private int wednesday_start=400;
-    private int thursday_start=300;
-    private int friday_start=300;
-    private int saturday_start=300;
-    private double User_lat=123.123123;
-    private double User_long=123.123123;
+    private int id;                     //하나의 사용자에 대한 고유 ID값
+
+    private int monday_start;
+    private int tuesday_start;
+    private int wednesday_start;
+    private int thursday_start;
+    private int friday_start;
+    private int saturday_start;
+    private double User2_lat;
+    private double User2_long;
 
     //getter & setter = 가져오거나 or 세팅을 하기위한 준비 단계
 
@@ -79,19 +80,19 @@ public class User {
         this.saturday_start = saturday_start;
     }
 
-    public double getUser_lat() {
-        return User_lat;
+    public double getUser2_lat() {
+        return User2_lat;
     }
 
-    public void setUser_lat(double user_lat) {
-        User_lat = user_lat;
+    public void setUser2_lat(double user2_lat) {
+        User2_lat = user2_lat;
     }
 
-    public double getUser_long() {
-        return User_long;
+    public double getUser2_long() {
+        return User2_long;
     }
 
-    public void setUser_long(double user_long) {
-        User_long = user_long;
+    public void setUser2_long(double user2_long) {
+        User2_long = user2_long;
     }
 }
